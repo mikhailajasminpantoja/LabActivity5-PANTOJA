@@ -41,7 +41,7 @@ public class SimpleCalcGUI extends JFrame {
 
                 // Set the result in the label
                 lblResult.setText(Double.toString(result));
-            } catch (NumberFormatException nfe) {
+            } catch (NumberFormatException e) {
                 // Display an error message if the input is not a valid number
                 JOptionPane.showMessageDialog(null, "Please enter valid numbers.", "Error", JOptionPane.ERROR_MESSAGE);
             } catch (ArithmeticException ae) {

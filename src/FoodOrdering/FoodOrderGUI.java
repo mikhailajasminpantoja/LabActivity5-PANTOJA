@@ -33,7 +33,7 @@ public class FoodOrderGUI extends JFrame {
             else if (rb15.isSelected()) result -= result * 0.15;
 
                 JOptionPane.showMessageDialog(null, "The total price is Php " + String.format("%.2f", result));
-            } catch (Exception ex){
+            } catch (Exception exc){
                 JOptionPane.showMessageDialog(null,"Error! Try again.", "Error", JOptionPane.ERROR_MESSAGE);
             }
         });

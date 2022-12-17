@@ -6,8 +6,4 @@ public class LeapYearGUI {
     private JPanel panel1;
     private JTextField tfYear;
     private JButton btnCheckYear;
-
-    public LeapYearCheck() {
-
-    }
 }

@@ -39,6 +39,7 @@ public class LeapYearGUI extends JFrame {
         public static void main(String[] args) {
             LeapYearGUI frame = new LeapYearGUI();
             frame.setContentPane(new LeapYearGUI().panel1);
+            frame.setLocationRelativeTo(null);
             frame.setSize(250,250);
             frame.setVisible(true);
             frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);

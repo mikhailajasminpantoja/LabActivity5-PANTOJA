@@ -32,9 +32,13 @@ public class FoodOrderGUI extends JFrame {
             else if (rb10.isSelected()) result -= result * 0.1;
             else if (rb15.isSelected()) result -= result * 0.15;
 
+            if(result == 0) {
+                throw new IllegalArgumentException("Please choose your order.");
+            }
+
                 JOptionPane.showMessageDialog(null, "The total price is Php " + String.format("%.2f", result));
-            } catch (Exception exc){
-                JOptionPane.showMessageDialog(null,"Error! Try again.", "Error", JOptionPane.ERROR_MESSAGE);
+            } catch (IllegalArgumentException nofood){
+                JOptionPane.showMessageDialog(null,"Please choose your order.", "Error", JOptionPane.ERROR_MESSAGE);
             }
         });
     }

@@ -42,6 +42,7 @@ public class FoodOrderGUI extends JFrame {
         FoodOrderGUI food = new FoodOrderGUI();
         food.setContentPane(new FoodOrderGUI().panel1);
         food.setSize(600, 600);
+        food.setLocationRelativeTo(null);
         food.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         food.setVisible(true);
     }

@@ -53,6 +53,7 @@ public class SimpleCalcGUI extends JFrame {
             SimpleCalcGUI calc = new SimpleCalcGUI();
             calc.setContentPane(new SimpleCalcGUI().panel1);
             calc.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+            calc.setLocationRelativeTo(null);
             calc.setSize(550,400);
             calc.setVisible(true);
 
